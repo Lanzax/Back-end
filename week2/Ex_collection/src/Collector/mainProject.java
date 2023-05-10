@@ -36,7 +36,10 @@ public class mainProject {
 		}	
 		System.out.println("--------------------------------------");
 		System.out.println("Oggetti:");
-		System.out.println(setParole);
+		for(String arrParole:setParole)
+		{
+			System.out.println("- "+arrParole);
+		}		
 		System.out.println("La dimensione: "+ setParole.size());
 		
 		
@@ -44,7 +47,10 @@ public class mainProject {
 
 		
 		System.out.println("Doppie:");
-		System.out.println(paroleDoppie);
+		for(String arrDoppie:paroleDoppie)
+		{
+			System.out.println("- "+arrDoppie);
+		}	
 		System.out.println("La dimensione: "+ paroleDoppie.size());
 		
 		System.out.println("--------------------------------------");
