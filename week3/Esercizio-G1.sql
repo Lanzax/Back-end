@@ -67,11 +67,13 @@ INSERT INTO fornitori (denominazione,regioneresidenza)
 VALUES ('DHL','SICILIA')
 select * from fornitori;
 
-/*esercizio 1*/
+/*
+--esercizio
 SELECT nome , cognome FROM clienti WHERE TO_CHAR(datanascita, 'YYYY') = '1985';
 
-/*esercizio 2*/
+--esercizio 2
 SELECT numfattura FROM fatture WHERE impiva = 20;
 
-/*esercizio 3*/
+--esercizio 3
 SELECT  numfattura , SUM(imp) FROM fatture  WHERE TO_CHAR(datafattura, 'YYYY');
+*/
