@@ -1,27 +1,19 @@
 package CONTROLLER;
 
-import java.time.LocalDate;
 
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
-
-import MODEL.Evento;
-import MODEL.TipoEvento;
-import UTILS.EventiDao;
 
 public class mainProject {
-	static EntityManagerFactory emf = Persistence.createEntityManagerFactory("JPAProject");
-    static EntityManager em = emf.createEntityManager();
+
     
     public static void main(String[] args) {
+    	/*
     	try {
+    		
     		EventiDao evd=new EventiDao(em);
         	Evento e1=new Evento( "piscina",LocalDate.of(2023, 7, 21),TipoEvento.PUBBLICO,33);
         	Evento e2=new Evento( "teatro",LocalDate.of(2023, 7, 21),TipoEvento.PRIVATO,33);
         	Evento e3=new Evento( "cinema",LocalDate.of(2023, 10, 21),TipoEvento.PRIVATO,36);
         	
-        	/*
         	inserisciEvento(e1);
         	
         	Evento el =leggiEvento(1);
@@ -34,13 +26,14 @@ public class mainProject {
         	Evento ed2= leggiEvento(3);
         	eliminaEvento(ed1);
         	eliminaEvento(ed2);
-        	    	*/
+        	    	
     	}catch(Exception e) {
     		e.printStackTrace();
     	}finally {
     		em.close();
     		emf.close();
     	}
+    	*/
     	
     }
     /*
