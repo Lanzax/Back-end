@@ -27,7 +27,7 @@ public prestiti() {
 	super();
 }
 
-public prestiti(model.utente utente, model.elemento elemento, LocalDate data_inizio_prestito,
+public prestiti(utente utente, elemento elemento, LocalDate data_inizio_prestito,
 		LocalDate data_restituzione_prestito_prevista, LocalDate data_restituzione_prestito_effettiva) {
 	super();
 	this.utente = utente;

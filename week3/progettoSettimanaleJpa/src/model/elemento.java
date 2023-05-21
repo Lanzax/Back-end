@@ -8,8 +8,11 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
+import javax.persistence.NamedQuery;
 @Entity
 @Inheritance(strategy=InheritanceType.JOINED)
+@NamedQuery(name = "elemento.findByISBN", query = "SELECT e FROM elemento e WHERE e.ISBN = :isbn")
+@NamedQuery(name = "elemento.findByTitolo", query = "SELECT e FROM elemento e WHERE e.titolo LIKE :titolo")
 public abstract class  elemento {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)

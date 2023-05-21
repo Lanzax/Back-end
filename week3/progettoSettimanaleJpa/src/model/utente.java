@@ -12,17 +12,19 @@ import javax.persistence.Id;
 public class utente {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	private int numero_di_tessera;
+	@Column
 	private String nome;
 	@Column
 	private String cognome;
 	@Column
 	private LocalDate data_di_nascita;
-	@Column
-	private Long numero_di_tessera;
+
+	
 	public utente() {
 		super();
 	}
-	public utente(String nome, String cognome, LocalDate data_di_nascita, Long numero_di_tessera) {
+	public utente(String nome, String cognome, LocalDate data_di_nascita, int numero_di_tessera) {
 		super();
 		this.nome = nome;
 		this.cognome = cognome;
@@ -47,10 +49,10 @@ public class utente {
 	public void setData_di_nascita(LocalDate data_di_nascita) {
 		this.data_di_nascita = data_di_nascita;
 	}
-	public Long getNumero_di_tessera() {
+	public int getNumero_di_tessera() {
 		return numero_di_tessera;
 	}
-	public void setNumero_di_tessera(Long numero_di_tessera) {
+	public void setNumero_di_tessera(int numero_di_tessera) {
 		this.numero_di_tessera = numero_di_tessera;
 	}
 	@Override
